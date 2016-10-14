@@ -1,0 +1,10 @@
+<div class="container">
+
+  <div class="well">
+    <ul class="nav nav-pills">
+      {{#link-to 'tasks' tagName="li"}}<a href="">Task</a>{{/link-to}}
+      {{#link-to 'dashboard' tagName="li"}}<a href="">Dashboard</a>{{/link-to}}
+    </ul>
+  </div>
+  {{outlet}}
+</div>

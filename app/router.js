@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('tasks', function() {
+    this.route('new');
+    this.route('edit', { path: '/:task_id/edit' })
+  });
+  this.route('dashboard');
 });
 
 export default Router;
